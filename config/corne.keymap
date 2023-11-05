@@ -100,20 +100,20 @@
         &kp TAB     &kp Q         &kp W         &kp F        &kp P         &kp G        &kp J      &kp L        &kp U          &kp Y         &kp SEMICOLON  &kp BACKSPACE
         &kp ESCAPE  &hml LSHFT A  &hml LCTRL R  &hml LALT S  &hml LCMD T   &kp D        &kp H      &hmr RCMD N  &hmr RALT E    &hmr RCTRL I  &hmr RSHFT O   &kp SQT
         &kp LSHFT   &kp Z         &kp X         &kp C        &kp V         &kp B        &kp K      &kp M        &kp COMMA      &kp DOT       &kp FSLH       &none
-                                                &kp LGUI     &lt 2 ESCAPE  &kp SPACE    &kp SPACE  &lt 1 RET    &kp LG(SPACE)
+                                                &kp LGUI     &lt 1 ESCAPE  &kp SPACE    &kp SPACE  &lt 2 RET    &kp LG(SPACE)
       >;
     };
 
-    raise {
+    num {
       bindings = <
-        &trans      &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
-        &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans
-        &trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                                                &trans        &trans        &trans          &trans  &trans  &trans
+        &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR   &capdance     &kp EQUAL     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp COLON  &kp K_UNDO
+        &trans  &trans        &trans        &trans        &trans       &trans        &kp KP_PLUS   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans     &trans
+        &trans  &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE  &kp K_REDO    &kp KP_MINUS  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans     &trans
+                                            &bootloader   &trans       &sys_reset    &trans        &kp KP_NUMBER_0  &kp KP_DOT
       >;
     };
 
-    lower {
+    sym {
       bindings = <
         &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp STAR  &kp LPAR  &kp RPAR  &trans
         &trans  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
