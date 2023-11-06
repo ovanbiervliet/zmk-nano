@@ -90,6 +90,14 @@
       #binding-cells = <0>;
       bindings = <&caps_word>, <&kp CAPS>;
     };
+    hold_toggle: hold_toggle {
+      compatible = "zmk,behavior-hold-tap";
+      label = "HOLD_TOGGLE";
+      bindings = <&mo>, <&tog>;
+
+      #binding-cells = <2>;
+      tapping-term-ms = <200>;
+    };
   };
 
   conditional_layers {
@@ -106,10 +114,10 @@
 
     base {
       bindings = <
-        &kp TAB     &kp Q         &kp W         &kp F        &kp P         &kp G        &kp J      &kp L        &kp U          &kp Y         &kp SEMICOLON  &kp BACKSPACE
-        &kp ESCAPE  &hml LSHFT A  &hml LCTRL R  &hml LALT S  &hml LCMD T   &kp D        &kp H      &hmr RCMD N  &hmr RALT E    &hmr RCTRL I  &hmr RSHFT O   &kp SQT
-        &kp LSHFT   &kp Z         &kp X         &kp C        &kp V         &kp B        &kp K      &kp M        &kp COMMA      &kp DOT       &kp FSLH       &none
-                                                &kp LGUI     &lt 1 ESCAPE  &kp SPACE    &kp SPACE  &lt 2 RET    &kp LG(SPACE)
+        &kp TAB     &kp Q         &kp W         &kp F        &kp P             &kp G        &kp J      &kp L        &kp U          &kp Y         &kp SEMICOLON  &kp BACKSPACE
+        &kp ESCAPE  &hml LSHFT A  &hml LCTRL R  &hml LALT S  &hml LCMD T       &kp D        &kp H      &hmr RCMD N  &hmr RALT E    &hmr RCTRL I  &hmr RSHFT O   &kp SQT
+        &kp LSHFT   &kp Z         &kp X         &kp C        &kp V             &kp B        &kp K      &kp M        &kp COMMA      &kp DOT       &kp FSLH       &none
+                                                &kp LGUI     &hold_toggle 1 1  &kp SPACE    &kp SPACE  &lt 2 RET    &kp LG(SPACE)
       >;
     };
 
