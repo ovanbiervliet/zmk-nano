@@ -132,9 +132,9 @@
     num {
       bindings = <
         &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR   &capdance     &kp EQUAL     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp COLON  &kp K_UNDO
-        &trans  &trans        &trans        &trans        &trans       &trans        &kp KP_PLUS   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans     &trans
-        &trans  &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE  &kp K_REDO    &kp KP_MINUS  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans     &trans
-                                            &bootloader   &trans       &sys_reset    &trans        &kp KP_NUMBER_0  &kp KP_DOT
+        &trans  &trans        &trans        &trans        &trans       &trans        &kp KP_PLUS   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp COMMA  &trans
+        &trans  &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE  &kp K_REDO    &kp KP_MINUS  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DOT    &trans
+                                            &bootloader   &trans       &sys_reset    &trans        &kp KP_NUMBER_0  &kp KP_ENTER
       >;
     };
 
