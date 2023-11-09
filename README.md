@@ -1,29 +1,18 @@
-# Keymap Editor Demo: Corne
+# ZMK Nano
 
-This is a customization of the ZMK config for the Corne keyboard with machine
-readable layout and keymap definitions for use with my [keymap-editor] tool.
+This is a customization of the ZMK config for the SplitKB Aurora Corne Nano
+split wireless keyboard with machine readable layout and keymap definitions 
+for use with my [keymap-editor] tool.
 
 > **Note**
-> If you aren't here to see how you can use my [keymap-editor] you would be
-> better off not forking this repository.
->
-> It's not that you _can't_ or are not welcome to, but as I made this is for
-> demonstration purposes I've never actually tested it on a corne keyboard.
-> You're just better off using the one that is provided in the ZMK repo.
-
-> **Warning**
-> In fact, this demo includes rotary encoders which don't exist for the corne
-> keyboard, so while the produced keymap is syntactically valid it can't be
-> used as-is to build ZMK firmware for an actual corne.
+> I'm using a Colemak layout with homerow mods, a numeric layer with
+> keypad layout (toggled and momentary), and a symbols layer for all brackets
+> etc.
+> Some combos are defined (ij, sch, tion) for easier typing.
+> A behavior for backspace/delete is defined for use with Ctrl (as in macOS)
+> 
 
 ![Screenshot](screenshot.png)
-
-## What's included
-
-This repo provides a basic corne 6x3 keymap ([`config/corne.keymap`]) that
-demonstrates some key features of the keymap editor, and a metadata file
-([`config/corne.json`]) to describe the layout and other features of a corne
-keyboard in a way that the keymap editor can use.
 
 ## How should I use this
 
