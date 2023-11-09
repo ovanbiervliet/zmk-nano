@@ -12,7 +12,7 @@ for use with my [keymap-editor] tool.
 > A behavior for backspace/delete is defined for use with Ctrl (as in macOS)
 > 
 
-![Screenshot](screenshot.png)
+![Screenshot](Ø-231109-aYlSNqeh@2x.png)
 
 ## How should I use this
 
