@@ -7,9 +7,7 @@
 // dt-formatter: multilineIntegerCellsIndent = "reindent"
 // dt-formatter: multilineListCommaStyle = "leading"
 
-&sk {
-  /delete-property/ ignore-modifiers;
-};
+&sk { /delete-property/ ignore-modifiers; };
 
 / {
   combos {
@@ -43,12 +41,14 @@
       label = "M_IJ";
       bindings = <&kp I &kp J>;
     };
+
     m_sch: m_sch {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
       label = "M_SCH";
       bindings = <&kp S &kp C &kp H>;
     };
+
     m_tion: m_tion {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -71,6 +71,7 @@
       flavor = "tap-preferred";
       hold-trigger-on-release;
     };
+
     hmr: homewrow_mods_right {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
@@ -84,12 +85,14 @@
       flavor = "tap-preferred";
       hold-trigger-on-release;
     };
+
     capdance: capdance {
       compatible = "zmk,behavior-tap-dance";
       label = "CAPDANCE";
       #binding-cells = <0>;
       bindings = <&caps_word>, <&kp CAPS>;
     };
+
     hol_tog: hold_toggle {
       compatible = "zmk,behavior-hold-tap";
       label = "HOLD_TOGGLE";
@@ -98,6 +101,7 @@
       #binding-cells = <2>;
       tapping-term-ms = <200>;
     };
+
     bsp_del: bsp_del {
       compatible = "zmk,behavior-mod-morph";
       label = "BSP_DEL";
@@ -122,16 +126,16 @@
 
     base {
       bindings = <
-        &kp TAB               &kp Q         &kp W         &kp F             &kp P         &kp G        &kp J      &kp L        &kp U          &kp Y         &kp SEMICOLON  &bsp_del
-        &kp ESCAPE            &hml LSHFT A  &hml LCTRL R  &hml LALT S       &hml LCMD T   &kp D        &kp H      &hmr RCMD N  &hmr RALT E    &hmr RCTRL I  &hmr RSHFT O   &kp SQT
-        &kp LS(LA(LC(LGUI)))  &kp Z         &kp X         &kp C             &kp V         &kp B        &kp K      &kp M        &kp COMMA      &kp DOT       &kp FSLH       &none
-                                                          &kp LC(LS(LALT))  &hol_tog 1 1  &kp SPACE    &kp SPACE  &lt 2 RET    &kp LG(SPACE)
+        &kp TAB               &kp Q         &kp W         &kp F             &kp P         &kp G        &kp J    &kp L         &kp U          &kp Y         &kp SEMICOLON  &bsp_del
+        &kp ESCAPE            &hml LSHFT A  &hml LCTRL R  &hml LALT S       &hml LCMD T   &kp D        &kp H    &hmr RCMD N   &hmr RALT E    &hmr RCTRL I  &hmr RSHFT O   &kp SQT
+        &kp LS(LA(LC(LGUI)))  &kp Z         &kp X         &kp C             &kp V         &kp B        &kp K    &kp M         &kp COMMA      &kp DOT       &kp FSLH       &none
+                                                          &kp LC(LS(LALT))  &hol_tog 1 1  &kp SPACE    &kp RET  &hol_tog 2 2  &kp LG(SPACE)
       >;
     };
 
     num {
       bindings = <
-        &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR   &capdance     &kp EQUAL     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp COLON  &kp K_UNDO
+        &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR   &capdance     &kp EQUAL     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp COLON  &kp DELETE
         &trans  &trans        &trans        &trans        &trans       &trans        &kp KP_PLUS   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp COMMA  &kp KP_ENTER
         &trans  &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE  &kp K_REDO    &kp KP_MINUS  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DOT    &trans
                                             &bootloader   &trans       &sys_reset    &trans        &kp KP_NUMBER_0  &trans
@@ -140,10 +144,10 @@
 
     sym {
       bindings = <
-        &trans  &kp EXCL  &kp AT     &kp HASH     &kp DLLR  &kp PRCNT               &kp CARET   &kp AMPS   &kp STAR     &kp LPAR   &kp RPAR       &kp PG_UP
-        &trans  &kp LPAR  &kp LBKT   &kp RBKT     &kp RPAR  &kp LS(LA(NUMBER_2))    &kp HOME    &kp LEFT   &kp DOWN     &kp UP     &kp RIGHT      &kp PG_DN
-        &trans  &kp LT    &kp GRAVE  &kp BSLH     &kp GT    &kp LA(NUMBER_3)        &kp END     &kp MINUS  &kp EQUAL    &kp COLON  &kp SEMICOLON  &trans
-                                     &kp LC(TAB)  &trans    &kp LG(TAB)             &sys_reset  &trans     &bootloader
+        &trans  &kp EXCL  &kp AT     &kp HASH     &kp DLLR     &kp PRCNT               &kp CARET   &kp AMPS   &kp STAR     &kp LPAR   &kp RPAR       &kp PG_UP
+        &trans  &kp LPAR  &kp LBKT   &kp RBKT     &kp RPAR     &kp LS(LA(NUMBER_2))    &kp HOME    &kp LEFT   &kp DOWN     &kp UP     &kp RIGHT      &kp PG_DN
+        &trans  &kp LT    &kp GRAVE  &kp BSLH     &kp GT       &kp LA(NUMBER_3)        &kp END     &kp MINUS  &kp EQUAL    &kp COLON  &kp SEMICOLON  &trans
+                                     &kp LC(TAB)  &kp LG(TAB)  &kp LC(TAB)             &sys_reset  &trans     &bootloader
       >;
     };
   };
