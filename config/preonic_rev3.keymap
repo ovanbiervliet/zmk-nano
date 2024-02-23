@@ -19,7 +19,7 @@
 #define U_UND &kp LG(Z)
 
 // #include "combos.dtsi"  // must be sourced after layer-shortcuts
-// #include "mouse.dtsi"
+#include "mouse.dtsi"
 
 // Behavior Overrides
 &lt {
