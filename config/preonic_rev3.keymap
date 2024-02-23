@@ -183,7 +183,7 @@
                  &kp TAB     &kp Q          &kp W          &kp F           &kp P           &kp G                   &kp J         &kp L          &kp U           &kp Y          &kp SEMI          &bspc_del
                  &kp ESC     &gmt LSHFT A   &gmt LCTRL R   &gmt LALT S     &gmt LGUI T     &kp D                   &kp H         &gmt LGUI N    &gmt LALT E     &gmt LCTRL I   &gmt LSHFT O      &kp SQT
                  &kp LGUI    &kp Z          &kp X          &kp C           &kp V           &kp B                   &kp K         &kp M          &kp COMMA       &kp DOT        &kp SLASH         &none
-                 &none       &none          &none          &mkp MB1        &glt NUM SPACE  &kp TAB                 &bspc_del     &glt SYM RET   &kp LEFT        &kp DOWN       &kp UP            &kp RIGHT
+                 &none       &none          &none          &none           &glt NUM SPACE  &kp TAB                 &bspc_del     &glt SYM RET   &kp LEFT        &kp DOWN       &kp UP            &kp RIGHT
                 >;
         };
         num_layer {
