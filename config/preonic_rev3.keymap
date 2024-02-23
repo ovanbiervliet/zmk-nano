@@ -194,14 +194,13 @@
             // |  DEL  |  F1  |  F2  |  F3  |  F4  |  F5   |  F6   |   -   |   =  |  [   |   ]   |  \    |
             // |       |  F7  |  F8  |  F9  |  F10 |  F11  |  F12  |   #   |   \  | PGUP |  PGDN |       |
             // |       |      |      |      |      | SHIFT |       |       | NEXT | VOL- |  VOL+ | PLAY  |
-
-            bindings = <
-&kp F1     &kp F2       &kp F3     &kp F4             &kp F5     &kp F6            &kp F7     &kp F8     &kp F9     &kp F10             &kp F11    &kp F12
-&none      &bootloader  &none      &none              &none      &caps_word U_RDO  &kp NUM_7  &kp NUM_8  &kp NUM_9  &kp LS(SEMI) U_UND  &none      &kp LSHFT
-&kp LCTRL  &kp LALT     &kp LGUI   &key_repeat U_UND  &kp NUM_4  &kp NUM_5         &kp NUM_6  &kp RIGHT  &kp SQT    &none U_UND U_CUT   &kp COMMA  &kp DOT U_RDO
-&kp MINUS  &kp NUM_1    &kp NUM_2  &kp NUM_3          &kp RET    &none             &none      &none      &none      &none               &none      &none
-&bsp_del   &kp NUM_0    &kp SPACE  &none              &none      &none
-            >;
+      bindings = <
+        &trans  &trans        &trans        &trans        &trans       &trans        &trans        &trans           &trans           &trans           &trans     &trans
+        &trans  &trans        &trans        &trans        &trans       &capdance     &kp EQUAL     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp COLON  &kp DELETE
+        &trans  &trans        &trans        &trans        &trans       &trans        &kp KP_PLUS   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp COMMA  &kp KP_ENTER
+        &trans  &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE  &kp K_REDO    &kp KP_MINUS  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DOT    &trans
+        &trans  &trans        &trans        &bootloader   &trans       &sys_reset    &trans        &kp KP_NUMBER_0  &trans           &trans           &trans     &trans
+                >;
         };
 
         sym_layer {
