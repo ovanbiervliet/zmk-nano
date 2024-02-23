@@ -211,7 +211,7 @@
             // |       |      |      |      |      | SHIFT |       |       | NEXT | VOL- |  VOL+ | PLAY  |
             bindings = <
                 &kp GRAVE   &kp N1         &kp N2          &kp N3          &kp N4        &kp N5                   &kp N6        &kp N7          &kp N8         &kp N9         &kp N0             &kp BSPC
-                &none       &kp EXCL       &kp AT          &kp HASH        &kp DLLR      &kp PRCT                 &kp CRRT      &kp AMPS        &kp ASTRK      U_WH_L         U_WH_R             &kp PG_UP
+                &none       &kp EXCL       &kp AT          &kp HASH        &kp DLLR      &kp PRCT                 &kp CRRT      &kp AMPS        &kp ASTRK      &none          &none              &kp PG_UP
                 &none       &kp LPAR       &kp LBKT        &kp RBKT        &kp RPAR      &kp LS(LA(NUM_2))        &kp HOME      &kp LEFT        &kp DOWN       &kp UP         &kp RIGHT          &kp PG_DN
                 &none       &kp LT         &kp GRAVE       &kp BSLH        &kp GT        &kp LA(NUM_3)            &kp END       &kp MINUS       &kp EQL        &kp LS(P)      &kp P              &none
                 &none       &none          &none           &kp LC(TAB)     &kp SPACE     &kp LG(TAB)              &none         &none           &none          &none          &none              &none
