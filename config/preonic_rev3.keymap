@@ -180,10 +180,10 @@
             // |       | LGUI | LALT | LCTL | NUM   | SPACE  |  SPACE  |  SYM   | LEFT |  DOWN |   UP  | RIGHT  |
             bindings = <
                 &kp GRAVE   &kp N1     &kp N2    &kp N3    &kp N4     &kp N5            &kp N6     &kp N7        &kp N8     &kp N9    &kp N0     &kp BSPC
-                 &kp TAB     &kp Q          &kp W          &kp F           &kp P           &kp G                   &kp J         &kp L          &kp U           &kp Y          &kp SEMI          &bspc_del
+                 &kp TAB     &kp Q          &kp W          &kp F           &kp P           &kp G                   &kp J         &kp L          &kp U           &kp Y          &kp SEMI          &bsp_del
                  &kp ESC     &gmt LSHFT A   &gmt LCTRL R   &gmt LALT S     &gmt LGUI T     &kp D                   &kp H         &gmt LGUI N    &gmt LALT E     &gmt LCTRL I   &gmt LSHFT O      &kp SQT
                  &kp LGUI    &kp Z          &kp X          &kp C           &kp V           &kp B                   &kp K         &kp M          &kp COMMA       &kp DOT        &kp SLASH         &none
-                 &none       &none          &none          &none           &glt NUM SPACE  &kp TAB                 &bspc_del     &glt SYM RET   &kp LEFT        &kp DOWN       &kp UP            &kp RIGHT
+                 &none       &none          &none          &none           &glt NUM SPACE  &kp TAB                 &bsp_del     &glt SYM RET   &kp LEFT        &kp DOWN       &kp UP            &kp RIGHT
                 >;
         };
         num_layer {
@@ -198,7 +198,7 @@
                 &none       &bootloader    &none           &none           &none         &caps_word               U_RDO         &kp NUM_7      &kp NUM_8       &kp NUM_9      &kp LS(SEMI)      U_UND
                 &none       &kp LSHFT      &kp LCTRL       &kp LALT        &kp LGUI      &key_repeat              U_UND         &kp NUM_4      &kp NUM_5       &kp NUM_6      &kp RIGHT         &kp SQT
                 &none       U_UND          U_CUT           &kp COMMA       &kp DOT       U_RDO                    &kp MINUS     &kp NUM_1      &kp NUM_2       &kp NUM_3      &kp RET           &none
-                &none       &none          &none           &none           &none         &none                    &bspc_del     &kp NUM_0      &kp SPACE       &none          &none             &none
+                &none       &none          &none           &none           &none         &none                    &bsp_del     &kp NUM_0      &kp SPACE       &none          &none             &none
                 >;
         };
 
