@@ -182,7 +182,7 @@
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N7     &kp N8        &kp N9       &kp N0        &kp MINUS     &kp EQUAL
 &kp TAB       &kp Q         &kp W         &kp F         &kp P         &kp G         &kp J      &kp L         &kp U        &kp Y         &kp SEMI      &bsp_del
 &kp ESC       &hml LSHFT A  &hml LCTRL R  &hml LALT S   &hml LGUI T   &kp D         &kp H      &hmr LGUI N   &hmr LALT E  &hmr LCTRL I  &hmr LSHFT O  &kp SQT
-&tog 1        &kp Z         &kp X         &kp C         &kp V         &kp B         &kp K      &kp M         &kp COMMA    &kp DOT       &kp SLASH     &none
+&tog 1        &kp Z         &kp X         &kp C         &kp V         &kp B         &kp K      &kp M         &kp COMMA    &kp DOT       &kp SLASH     &kp LG(SPACE)
 &kp GLOBE     &kp LCTRL     &kp LEFT_ALT  &kp LEFT_GUI  &hol_tog 1 1  &kp SPACE     &kp ENTER  &hol_tog 2 2  &kp LEFT     &kp DOWN      &kp UP        &kp RIGHT
             >;
         };
