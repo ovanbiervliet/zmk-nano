@@ -126,10 +126,10 @@
 
     base {
       bindings = <
-        &kp TAB               &kp Q         &kp W         &kp F             &kp P         &kp G        &kp J    &kp L         &kp U          &kp Y         &kp SEMICOLON  &bsp_del
-        &kp ESCAPE            &hml LSHFT A  &hml LCTRL R  &hml LALT S       &hml LCMD T   &kp D        &kp H    &hmr RCMD N   &hmr RALT E    &hmr RCTRL I  &hmr RSHFT O   &kp SQT
-        &kp LS(LA(LC(LGUI)))  &kp Z         &kp X         &kp C             &kp V         &kp B        &kp K    &kp M         &kp COMMA      &kp DOT       &kp FSLH       &none
-                                                          &kp LC(LS(LALT))  &hol_tog 1 1  &kp SPACE    &kp RET  &hol_tog 2 2  &kp LG(SPACE)
+        &kp TAB               &kp Q         &kp W         &kp F             &kp P        &kp G        &kp J      &kp L        &kp U          &kp Y         &kp SEMICOLON  &bsp_del
+        &kp ESCAPE            &hml LSHFT A  &hml LCTRL R  &hml LALT S       &hml LCMD T  &kp D        &kp H      &hmr RCMD N  &hmr RALT E    &hmr RCTRL I  &hmr RSHFT O   &kp SQT
+        &kp LS(LA(LC(LGUI)))  &kp Z         &kp X         &kp C             &kp V        &kp B        &kp K      &kp M        &kp COMMA      &kp DOT       &kp FSLH       &none
+                                                          &kp LC(LS(LALT))  &lt 1 SPACE  &kp SPACE    &kp SPACE  &lt 2 ENTER  &kp LG(SPACE)
       >;
     };
 
